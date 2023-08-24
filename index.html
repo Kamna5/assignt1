@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="container">
+            <h1>Exam enter</h1>
+            <div class="flex">
+                <input type="text" placeholder="Enter name" id="name">
+                <input type="text" placeholder="Enter email " id="email">
+                <label>Choose a center</label>
+                <select>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+
+                </select>
+
+            </div>
+            <button class="btn" id="btn" Onclick="addStudent()">Add New User</button>
+
+
+            <div class="alert" id="alert-danger">User already exist</div>
+            <div class="alert" id="alert-success">User added</div>
+
+        </div>
+
+        <div class="students" id="students">
+            <div class="student">
+
+                <p class="name">Kamna</p>
+                <p class="email">kamna@gmail.com</p>
+                <input type="text" placeholder="select your center" id="center">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
