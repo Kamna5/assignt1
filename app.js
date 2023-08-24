@@ -48,7 +48,7 @@ function displayStudent() {
         let emailElement = document.createElement("p");
         emailElement.innerText = a.email;
         let InputElement = document.createElement("p");
-        InputElement.innerText = "";
+        InputElement.innerText = a.center;
 
 
 
@@ -64,9 +64,11 @@ function addStudent() {
 
     let name = document.getElementById("name");
     let email = document.getElementById("email");
+    let center = document.getElementById("center")
     let student = {
         name: name.value,
         email: email.value,
+        center:center.value
     };
 
    
